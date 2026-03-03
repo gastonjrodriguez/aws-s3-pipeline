@@ -5,7 +5,7 @@ from transform import transform
 
 def run_pipeline(bucket: str, prefix: str | None = None, files: list[str] | None = None) -> None:
 
-    if files is not None: # en caso de querer archivos puntuales
+    if files is not None: # in case of using specific files
         keys = files
     else:
         keys = list_files(bucket, prefix, '.csv')

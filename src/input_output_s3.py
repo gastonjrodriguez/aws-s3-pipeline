@@ -22,7 +22,7 @@ def list_files(bucket: str, prefix: str, extension: str) -> list[str]:
         return []
     
 
-# LEER archivos (.csv) de S3 ----------------------------
+# Read files (.csv) from S3 ----------------------------
 
 def read_csv_from_s3 (bucket: str, key: str) -> pd.DataFrame | None:
     try:
@@ -35,7 +35,7 @@ def read_csv_from_s3 (bucket: str, key: str) -> pd.DataFrame | None:
         return None
 
 
-# GUARDAR EN OTRO FORMATO (.parquet) a S3 ----------------------------
+# Save to another format (.parquet) to S3 ----------------------------
 
 def write_parquet_to_s3(df: pd.DataFrame, bucket: str, key: str) -> None:
     try:

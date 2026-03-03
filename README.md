@@ -1,9 +1,18 @@
 # S3 ETL Pipeline. CSV -> Transformacion -> Parquet
 
-Pequeño pipeline ETL en Python que lee archivos **CSV** desde un bucket de AWS S3 (`raw/`), aplica transformaciones simples y escribe el resultado en formato **Parquet** en `processed/`.
+## Descripcion
+
+Pipeline ETL en Python que lee archivos **CSV** desde un bucket de AWS S3 (`raw/`), aplica transformaciones simples y escribe el resultado en formato **Parquet** en `processed/`.
 
 El proyecto está estructurado de forma modular para permitir ejecución batch (todos los archivos) o procesamiento puntual de archivos específicos.
 
+## Tech stack
+
+* Python 3.x
+* boto3
+* pandas
+* pyarrow
+* AWS S3
 
 ## Objetivo
 
@@ -23,7 +32,7 @@ src/
 ├── transform.py       # Transformaciones puras
 ├── input_output_s3.py # Lectura/escritura en S3
 ├── config.py          # Variables de entorno
-│
+
 .venv
 requirements.txt
 .gitignore
@@ -50,7 +59,7 @@ pip install -r requirements.txt
 
 ## Configuración
 
-Crear archivo `.env`:
+Crear archivo `.env` (basado en .env.example):
 
 ```
 AWS_BUCKET=mi-bucket

@@ -24,7 +24,7 @@ src/
 ├── input_output_s3.py # Lectura/escritura en S3
 ├── config.py          # Variables de entorno
 │
-.env
+.venv
 requirements.txt
 .gitignore
 ```

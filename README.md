@@ -20,7 +20,7 @@ The project is architected in a modular way to support both batch execution (pro
 * Save transformed datasets in Parquet format
 * Maintain separation of concerns and CLI-based parameterization
 
-## Arquitecture
+## Architecture
 
 ```
 src/
